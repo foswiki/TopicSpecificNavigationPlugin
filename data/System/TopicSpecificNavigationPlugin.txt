@@ -1,0 +1,53 @@
+%META:TOPICINFO{author="EugenMayer" date="1229338237" format="1.1" reprev="1.2" version="1.2"}%
+---+ !TopicSpecificNavigationPlugin
+This plugins introduces a new navigation type for each topic: It should be used to place things like related links, further readups etc.
+   * Set SHORTDESCRIPTION = This plugins introduces a new navigation type for each topic: It should be used to place things like related links, further readups etc. 
+
+%TOC%
+
+---++ Introduction / Motivation
+This plugin introduces a new field to topic, the subnavigation. Every user able to edit the topic, can edit the navigation. He can add links which can be used to refer to 
+other topics. The links are added by a UI and its easy to go. This navigation should try to help readers follow up informations or simply "navigate down". You can separate content that way more easily,
+and the users always looks at the same place/box to look, where the other parts are, instead of looking for any links in the content-text.
+
+---++ Installation instructions
+   * just use the installer attached to the topic or even easier, use the configure-system/Extension to easy install it trough an user-interface
+
+---+++ Configuration
+   * Use the Configuration Center ( bin/configure ) to configure the driver you want to use, the DSN and user / password
+
+---+++ Optional: Create table
+   1 check this [[DBConnectorPluginCreateTableQuery][topic]] to see, which query is used to create the table for a web, where information is stored
+   1 click [[%SCRIPTURL{"rest"}%/DBConnectorPlugin/createdb?topic=System.WebHome][here]] to create a test table for the System-Web
+   1 no you can query the database with update and get queries like described abo
+__Note:__ You do not need to install anything on the browser to use this Plugin. The following instructions are for the administrator who installs the Plugin on the server where Foswiki is running.
+
+---++ !ToDo
+   * provide easy way to remove values
+   * provide easy way to set fields for a topic to the default-values
+   * Build an example-application
+   * auto-creating of tables for all webs and stuff like that
+   
+|  Plugin Author: | Foswiki:Main.EugenMayer |
+|  Copyright: | &copy; Impressive.media |
+|  License: | GPL ([[http://www.gnu.org/copyleft/gpl.html][GNU General Public License]]) |
+|  Plugin Version: | 15 Dez 2008 (V0.1) |
+|  Change History: | <!-- versions below in reverse order --> |
+|  15 Dez 2008: | initial release |
+|  Foswiki Dependency: | |
+|  CPAN Dependencies: | DBI |
+|  Other Dependencies: | your backend, e.g. DBD::SQLite |
+|  Perl Version: | 5.005 |
+|  Add-on Home: | http://foswiki.org/Extensions/%TOPIC% |
+|  Feedback: | http://foswiki.org/Extensions/%TOPIC%Dev |
+|  Appraisal: | http://foswiki.org/Extensions/%TOPIC%Appraisal |
+ __Related Topic:__
+
+-- Foswiki:Main/EugenMayer - 15 Dez 2008
+
+%META:FORM{name="PackageForm"}%
+%META:FIELD{name="TopicClassification" attributes="" title="TopicClassification" value="PluginPackage"}%
+%META:FIELD{name="Compatibility" attributes="" title="[[Compatibility]]" value=""}%
+%META:FIELD{name="DemoUrl" attributes="" title="DemoUrl" value="http://"}%
+%META:FIELD{name="DevelopedInSVN" attributes="" title="DevelopedInSVN" value="Yes"}%
+%META:FIELD{name="ModificationPolicy" attributes="" title="ModificationPolicy" value="PleaseFeelFreeToModify"}%

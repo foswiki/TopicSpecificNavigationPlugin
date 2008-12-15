@@ -1,0 +1,4 @@
+lib/Foswiki/Plugins/TopicSpecificNavigationPlugin.pm Plugin Perl module
+lib/Foswiki/Plugins/TopicSpecificNavigationPlugin/Config.spec
+data/System/TopicSpecificNavigationPlugin.txt Plugin topic
+
