@@ -6,27 +6,18 @@ This plugins introduces a new navigation type for each topic: It should be used 
 %TOC%
 
 ---++ Introduction / Motivation
-This plugin introduces a new field to topic, the subnavigation. Every user able to edit the topic, can edit the navigation. He can add links which can be used to refer to 
-other topics. The links are added by a UI and its easy to go. This navigation should try to help readers follow up informations or simply "navigate down". You can separate content that way more easily,
-and the users always looks at the same place/box to look, where the other parts are, instead of looking for any links in the content-text.
+This plugin introduces a new data toa topic, the subnavigation. Every user is able to edit this subnavigation. He can add links which can be used to refer to 
+other topics, readups or related topics. All links are added using the WYSIWYG Editor. This navigation should try to help readers follow up informations or simply "navigate down" the tree to get to the point they actaully want to. 
+You can separate content that way more easily, and the users always can look at the same place/box, where all such links are stored, instead of looking for any links in the content-text ( and missing them ).
 
 ---++ Installation instructions
    * just use the installer attached to the topic or even easier, use the configure-system/Extension to easy install it trough an user-interface
 
----+++ Configuration
-   * Use the Configuration Center ( bin/configure ) to configure the driver you want to use, the DSN and user / password
-
----+++ Optional: Create table
-   1 check this [[DBConnectorPluginCreateTableQuery][topic]] to see, which query is used to create the table for a web, where information is stored
-   1 click [[%SCRIPTURL{"rest"}%/DBConnectorPlugin/createdb?topic=System.WebHome][here]] to create a test table for the System-Web
-   1 no you can query the database with update and get queries like described abo
 __Note:__ You do not need to install anything on the browser to use this Plugin. The following instructions are for the administrator who installs the Plugin on the server where Foswiki is running.
 
 ---++ !ToDo
-   * provide easy way to remove values
-   * provide easy way to set fields for a topic to the default-values
-   * Build an example-application
-   * auto-creating of tables for all webs and stuff like that
+   * Provide UI to insert/edit links
+   * provide default template to show links for topics in a box
    
 |  Plugin Author: | Foswiki:Main.EugenMayer |
 |  Copyright: | &copy; Impressive.media |
