@@ -56,11 +56,10 @@ sub initPlugin {
     
     Foswiki::Func::registerRESTHandler('getnavigation', \&_getSubnavigation);
     Foswiki::Func::registerRESTHandler('setnavigation', \&_saveSubnavigation);
-
-    # Plugin correctly initialized
-    _connect();
+  
     $curWeb = $web;
     $curTopic = $topic;
+    # Plugin correctly initialized
     return 1;
 }
 
@@ -69,9 +68,9 @@ sub _getSubnavigation{
     my $web = $session->{webName};
     my $topic = $session->{topicName};  
     
-    my %result = Foswiki::Plugins::DBConnectorPlugin::getValues($web, $topic, ('subnavigation'));
+    my %result = Foswiki::Plugins::DBConnectorPlugin::getValues($web, $topic, ['subnavigation']);
     print %result->{'subnavigation'};
-    return 1;
+    return %result->{'subnavigation'};
 }
 
 sub _saveSubnavigation{
@@ -81,7 +80,7 @@ sub _saveSubnavigation{
     my $query = $session->{cgiQuery};
     my $subnavigation = $query->param("subnavigation");    
     my %pairs;    
-    %pairs->{'subnaviation'} = $subnavigation;
+    %pairs->{'subnavigation'} = $subnavigation;
     my %result = Foswiki::Plugins::DBConnectorPlugin::updateValues($web, $topic, \%pairs);
     return 1;
 }
