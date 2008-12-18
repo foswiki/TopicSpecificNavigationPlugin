@@ -12,18 +12,27 @@ You can separate content that way more easily, and the users always can look at 
 
 ---++ Installation instructions
    * just use the installer attached to the topic or even easier, use the configure-system/Extension to easy install it trough an user-interface
-
+   * Create a table for each web, where you want to use the Topic-Specific-Navigation
+<form action="/bin/rest/DBConnectorPlugin/createdb?topic=%WEB%.%TOPIC%"" method="get">
+<input type="hidden" name="sourceWeb" value="%WEB%"> 
+<input type="hidden" name="sourceTopic" value="TopicSpecificNavigationPluginTableCreation"> 
+| Create table for: | <input type="text" name="targetWeb" value="%WEB%"> | <input type="submit" name="Create Table" value="Create Table"> |
+</form>
+   * You need to add the skin *topicspecificnav* to your current. you don`t need to change the skin itself, you just add the new one, so e.g. you use PatternSkin right now, you will write in your WebPreferences :
+      * Set SKIN= topicspecificnav, pattern
+      * Order is important! This way a box is shown on the right side. It includes an Edit-Button to customize the Navigation. You can customize the box by CSS or simply change it for your skin.
+       
+------
 __Note:__ You do not need to install anything on the browser to use this Plugin. The following instructions are for the administrator who installs the Plugin on the server where Foswiki is running.
 
 ---++ !ToDo
-   * Provide UI to insert/edit links
-   * provide default template to show links for topics in a box
-   
+
 |  Plugin Author: | Foswiki:Main.EugenMayer |
 |  Copyright: | &copy; Impressive.media |
 |  License: | GPL ([[http://www.gnu.org/copyleft/gpl.html][GNU General Public License]]) |
-|  Plugin Version: | 15 Dez 2008 (V0.1) |
+|  Plugin Version: | 15 Dez 2008 (V0.2) |
 |  Change History: | <!-- versions below in reverse order --> |
+|  18 Dez 2008: |Added template / skin to show the Topic-Specific-Navigation. Added a template for the Field-Editor ( DBConnectorPlugin ).%BR% * Added a table-creation script%BR% * Bugfxinf / testing|
 |  15 Dez 2008: | initial release |
 |  Foswiki Dependency: | DBConnectorPlugin |
 |  CPAN Dependencies: | |

@@ -1,0 +1,4 @@
+%{ This is a default template }%%TMPL:INCLUDE{"editdbfield"}%
+%{ if an editor plugin sets EDITOR_MESSAGE, then use it }%
+
+%TMPL:DEF{"topicactionbuttons"}%<input type="submit" class="foswikiSubmit" name="action_cancel" value="Cancel" id="cancel" />%TMPL:P{"sep"}%<input type="submit" class="foswikiSubmit" name="action_save" value="Save" id="save" />%TMPL:END%

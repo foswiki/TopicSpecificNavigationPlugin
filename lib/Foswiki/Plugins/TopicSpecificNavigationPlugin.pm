@@ -39,7 +39,7 @@ $VERSION = '$Rev: 12445$';
 # This is a free-form string you can use to "name" your own plugin version.
 # It is *not* used by the build automation tools, but is reported as part
 # of the version number in PLUGINDESCRIPTIONS.
-$RELEASE = '0.1';
+$RELEASE = '0.2';
 
 # Short description of this plugin
 # One line description, is shown in the %FoswikiWEB%.TextFormattingRules topic:
@@ -56,7 +56,9 @@ sub initPlugin {
     
     Foswiki::Func::registerRESTHandler('getnavigation', \&_getSubnavigation);
     Foswiki::Func::registerRESTHandler('setnavigation', \&_saveSubnavigation);
-  
+
+    my $output = '<style type="text/css" media="all">@import url(\'/pub/System/TopicSpecificNavigationPlugin/topicspecificnav.css\');</style>';
+    Foswiki::Func::addToHEAD($pluginName."_basecss",$output);
     $curWeb = $web;
     $curTopic = $topic;
     # Plugin correctly initialized
@@ -68,9 +70,8 @@ sub _getSubnavigation{
     my $web = $session->{webName};
     my $topic = $session->{topicName};  
     
-    my %result = Foswiki::Plugins::DBConnectorPlugin::getValues($web, $topic, ['subnavigation']);
-    print %result->{'subnavigation'};
-    return %result->{'subnavigation'};
+    my %result = Foswiki::Plugins::DBConnectorPlugin::getValues($web, $topic, ['subnavigation']);    
+    return $result{'subnavigation'};
 }
 
 sub _saveSubnavigation{
@@ -80,7 +81,7 @@ sub _saveSubnavigation{
     my $query = $session->{cgiQuery};
     my $subnavigation = $query->param("subnavigation");    
     my %pairs;    
-    %pairs->{'subnavigation'} = $subnavigation;
+    $pairs{'subnavigation'} = $subnavigation;
     my %result = Foswiki::Plugins::DBConnectorPlugin::updateValues($web, $topic, \%pairs);
     return 1;
 }
