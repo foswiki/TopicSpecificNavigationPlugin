@@ -2,36 +2,67 @@
     overflow:hidden;
 }
 
-#contentContainer .textContent {
+#contentContainer .foswikiTopicText {
 	float:left;
 	width:80%;
 }
 
-#contentContainer #topicSpecificSubnavigation {
+#topicSpecificSubnavigation {
     float:right;
     width:18%;
     border:1px solid #E8F3F7;
 }
 
-#contentContainer #topicSpecificSubnavigation .title{
-    padding-top:1px;
-    padding-bottom:1px;
-    background-color:#E8F3F7;
-    text-align: center;
-    font-weight: bold;
+#topicSpecificSubnavigation .topicSpecifciSubnavigationLinks {
+	margin-left:30px;
+}
+
+#topicSpecificSubnavigation .topicSpecifciSubnavigationLinks ul {
+    list-style-type: square;
+}
+
+
+#topicSpecificSubnavigation ul {
+	padding:0px;    
+    margin:0px;
+    width:100%;
+    
+}
+#topicSpecificSubnavigation li.listTop, #topicSpecificSubnavigation li.listBottom{
+    background-color:#E8F3F7; 
+    background: url(book.png) 0 9px no-repeat;
+    background-position:4px center;   
+    color:white;    
+    font-weight:bold;    
+    font-size:17px;
+    vertical-align: middle;
+    margin:0px;
+    margin-bottom:10px;    
+    padding-left:23px;
     overflow:hidden;
 }
 
-#contentContainer #topicSpecificSubnavigation .title .titleText{
+#topicSpecificSubnavigation li.listBottom {
+	background: none;
+	}
+
+#topicSpecificSubnavigation .listTop p{
+    display:inline;
     float:left;
-    text-align: center;
-    width:80%;
+    margin:0px;
+    padding:0px;
+    padding-left:10px;	
+    color:black;
 }
 
-#contentContainer #topicSpecificSubnavigation .editLink{
-    background-image:url(pencil.png);
-    width:15px;
-    height:15px;
-    float:right;
-    margin-right:15px;
+#topicSpecificSubnavigation .editLink{
+    background: url(plus.png) 0 9px no-repeat;
+    background-position:left center; 
+    width:25px;
+    height:16px;
+    display:inline;
+    float:right;    
+    padding-right:5px;
 }
+
+

@@ -1,13 +1,4 @@
-%{ This is a default template }%%TMPL:INCLUDE{"view"}%
-%TMPL:DEF{"content"}%
-<div id="contentContainer">
-<div class="textContent">%TEXT%</div>%TMPL:P{topicspecificnavigation}%</div>
+%{ This is a default template }%%TMPL:INCLUDE{"view"}%%TMPL:INCLUDE{"topicspecificnavigationbox"}%
+%TMPL:DEF{"content"}%<div id="contentContainer"><div class="foswikiTopicText">%TEXT%</div>%TMPL:P{topicspecificnavigation}%</div>
 #TopicEnd%TMPL:END%
 
-%TMPL:DEF{topicspecificnavigation}%<div id='topicSpecificSubnavigation'>
-<div class="title">
-<span class="titleText">%MAKETEXT{Further Topics}%</span>
-%EDITFIELDBUTTON{ type="subnavigation" field="subnavigation" format="<a class='editLink' href='%URL%' title='%MAKETEXT{Edit the topic specific navigaiton}%'></a>"}%
-</div>
-%DISPLAYDBFIELD{ field="subnavigation" }%</div>
-%TMPL:END%

@@ -4,5 +4,6 @@ data/System/TopicSpecificNavigationPluginTableCreation.txt
 pub/System/TopicSpecificNavigationPlugin/topicspecificnav.css
 templates/editdbfield_subnavigation.tmpl
 templates/view.topicspecificnav.tmpl
+templates/topicspecificnavigationbox.topicspecificnav.tmpl
 
 
