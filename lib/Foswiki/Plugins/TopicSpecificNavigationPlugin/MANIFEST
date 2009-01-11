@@ -2,6 +2,11 @@ lib/Foswiki/Plugins/TopicSpecificNavigationPlugin.pm Plugin Perl module
 data/System/TopicSpecificNavigationPlugin.txt Plugin topic
 data/System/TopicSpecificNavigationPluginTableCreation.txt
 pub/System/TopicSpecificNavigationPlugin/topicspecificnav.css
+pub/System/TopicSpecificNavigationPlugin/book.gif
+pub/System/TopicSpecificNavigationPlugin/book.png
+pub/System/TopicSpecificNavigationPlugin/plus.gif
+pub/System/TopicSpecificNavigationPlugin/plus.png
+pub/System/TopicSpecificNavigationPlugin/pencil.png
 templates/editdbfield_subnavigation.tmpl
 templates/view.topicspecificnav.tmpl
 templates/topicspecificnavigationbox.topicspecificnav.tmpl
