@@ -32,6 +32,7 @@ __Note:__ You do not need to install anything on the browser to use this Plugin.
 |  License: | GPL ([[http://www.gnu.org/copyleft/gpl.html][GNU General Public License]]) |
 |  Plugin Version: | 02 Jan 2009 (V0.3) |
 |  Change History: | <!-- versions below in reverse order --> |
+|  11 Jan 2009: | Fixed IE PNG bugs, added forgetten pictures, manifest fix. |
 |  02 Jan 2009: | Reworked template, new look. |
 |  18 Dez 2008: |Added template / skin to show the Topic-Specific-Navigation. Added a template for the Field-Editor ( DBConnectorPlugin ).%BR% * Added a table-creation script%BR% * Bugfxinf / testing|
 |  15 Dez 2008: | initial release |
