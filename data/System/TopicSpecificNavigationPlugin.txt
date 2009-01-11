@@ -30,7 +30,7 @@ __Note:__ You do not need to install anything on the browser to use this Plugin.
 |  Plugin Author: | Foswiki:Main.EugenMayer |
 |  Copyright: | &copy; Impressive.media |
 |  License: | GPL ([[http://www.gnu.org/copyleft/gpl.html][GNU General Public License]]) |
-|  Plugin Version: | 02 Jan 2009 (V0.3) |
+|  Plugin Version: | 11 Jan 2009 (V0.4) |
 |  Change History: | <!-- versions below in reverse order --> |
 |  11 Jan 2009: | Fixed IE PNG bugs, added forgetten pictures, manifest fix. |
 |  02 Jan 2009: | Reworked template, new look. |
