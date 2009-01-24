@@ -53,11 +53,11 @@ our $curTopic;
 
 sub initPlugin {
     my( $topic, $web, $user, $installWeb ) = @_;
-    
+    my $pluginPubHome = Foswiki::Func::getPubUrlPath()."/System/$pluginName";
     Foswiki::Func::registerRESTHandler('getnavigation', \&_getSubnavigation);
     Foswiki::Func::registerRESTHandler('setnavigation', \&_saveSubnavigation);
 
-    my $output = '<style type="text/css" media="all">@import url(\'/pub/System/TopicSpecificNavigationPlugin/topicspecificnav.css\');</style>';
+    my $output = '<style type="text/css" media="all">@import url(\''.$pluginPubHome.'/topicspecificnav.css\');</style>';
     Foswiki::Func::addToHEAD($pluginName."_basecss",$output);
     $curWeb = $web;
     $curTopic = $topic;
