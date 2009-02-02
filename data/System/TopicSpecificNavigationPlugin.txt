@@ -28,7 +28,7 @@ __Note:__ You do not need to install anything on the browser to use this Plugin.
 ---++ !ToDo
 
 |  Plugin Author: | Foswiki:Main.EugenMayer |
-|  Copyright: | &copy; Impressive.media |
+|  Copyright: | &copy; 2009, Collaborganize [[www.collaborganize.com]] |
 |  License: | GPL ([[http://www.gnu.org/copyleft/gpl.html][GNU General Public License]]) |
 |  Plugin Version: | 24 Jan 2009 (V0.5) |
 |  Change History: | <!-- versions below in reverse order --> |
@@ -49,8 +49,10 @@ __Note:__ You do not need to install anything on the browser to use this Plugin.
 -- Foswiki:Main/EugenMayer - 15 Dez 2008
 
 %META:FORM{name="PackageForm"}%
-%META:FIELD{name="TopicClassification" attributes="" title="TopicClassification" value="PluginPackage"}%
+%META:FIELD{name="ExtensionClassification" attributes="" title="ExtensionClassification" value="Editing and Editors, User interactivity, Content"}%
+%META:FIELD{name="ExtensionType" attributes="" title="ExtensionType" value="PluginPackage"}%
 %META:FIELD{name="Compatibility" attributes="" title="[[Compatibility]]" value=""}%
 %META:FIELD{name="DemoUrl" attributes="" title="DemoUrl" value="http://"}%
 %META:FIELD{name="DevelopedInSVN" attributes="" title="DevelopedInSVN" value="Yes"}%
 %META:FIELD{name="ModificationPolicy" attributes="" title="ModificationPolicy" value="PleaseFeelFreeToModify"}%
+
