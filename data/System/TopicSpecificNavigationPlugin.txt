@@ -13,7 +13,7 @@ You can separate content that way more easily, and the users always can look at 
 ---++ Installation instructions
    * just use the installer attached to the topic or even easier, use the configure-system/Extension to easy install it trough an user-interface
    * Create a table for each web, where you want to use the Topic-Specific-Navigation
-<form action="/bin/rest/DBConnectorPlugin/createdb?topic=%WEB%.%TOPIC%"" method="get">
+<form action="%SCRIPTURL{rest}%/DBConnectorPlugin/createdb?topic=%WEB%.%TOPIC%"" method="get">
 <input type="hidden" name="sourceWeb" value="%WEB%"> 
 <input type="hidden" name="sourceTopic" value="TopicSpecificNavigationPluginTableCreation"> 
 | Create table for: | <input type="text" name="targetWeb" value="%WEB%"> | <input type="submit" name="Create Table" value="Create Table"> |
@@ -30,8 +30,9 @@ __Note:__ You do not need to install anything on the browser to use this Plugin.
 |  Plugin Author: | Foswiki:Main.EugenMayer |
 |  Copyright: | &copy; 2009, Collaborganize [[www.collaborganize.com]] |
 |  License: | GPL ([[http://www.gnu.org/copyleft/gpl.html][GNU General Public License]]) |
-|  Plugin Version: | 24 Jan 2009 (V0.5) |
+|  Plugin Version: | 05 Feb 2009 (V0.6) |
 |  Change History: | <!-- versions below in reverse order --> |
+|  05 Fev 2009: | Template fix |
 |  24 Jan 2009: | Pub-URL path fix |
 |  11 Jan 2009: | Fixed IE PNG bugs, added forgetten pictures, manifest fix. |
 |  02 Jan 2009: | Reworked template, new look. |
